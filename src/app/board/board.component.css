@@ -1,0 +1,26 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 30%;
+  margin: auto auto;
+}
+
+.timer {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 100px;
+  color: darkslategray;
+}
+
+.restart-btn {
+  margin-left: 200px;
+  background-color: white;
+  border-radius: 2em;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}

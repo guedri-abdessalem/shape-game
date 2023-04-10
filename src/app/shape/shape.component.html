@@ -1,0 +1,7 @@
+<svg [attr.width]="size" [attr.height]="size">
+  <ng-container [ngSwitch]="shape.name">
+    <rect *ngSwitchCase="'square'" [attr.width]="size" [attr.height]="size" />
+    <polygon *ngSwitchCase="'triangle'" [attr.points]="trianglePoints" />
+    <circle *ngSwitchCase="'circle'" [attr.r]="size/2" [attr.cx]="size/2" [attr.cy]="size/2" />
+  </ng-container>
+</svg>

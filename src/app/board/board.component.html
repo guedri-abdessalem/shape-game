@@ -1,0 +1,11 @@
+<h2 class="timer"><span>Timer: {{ seconds }}</span>
+  <span style="margin-left: 200px;"> Movement: {{ movements }}</span>
+  <button type="button" class="restart-btn" (click)="restart()">Restart</button>
+  <hr>
+</h2>
+
+<br>
+<div class="board">
+  <app-card *ngFor="let shape of shapes" [style.pointer-events]="isFlipped(shape.id)?'none':'initial'" [shape]="shape"
+    [flipped]="isFlipped(shape.id)" (flip)="onFlip(shape)"></app-card>
+</div>
